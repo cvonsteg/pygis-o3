@@ -1,5 +1,5 @@
 [package]
-name = "haversine"
+name = "pygisO3"
 version = "0.1.0"
 authors = ["cvonsteg <cvonstegmann@gmail.com>"]
 edition = "2018"

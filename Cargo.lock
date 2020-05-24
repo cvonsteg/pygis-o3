@@ -38,13 +38,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "haversine"
-version = "0.1.0"
-dependencies = [
- "pyo3 0.10.1 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
 name = "indoc"
 version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -151,6 +144,13 @@ version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "unicode-xid 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "pygisO3"
+version = "0.1.0"
+dependencies = [
+ "pyo3 0.10.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
