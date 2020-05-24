@@ -22,7 +22,7 @@ fn haversine(lat_from: f64, lon_from: f64, lat_to: f64, lon_to: f64) -> PyResult
 
 
 #[pymodule]
-fn gis(_py: Python, m: &PyModule) -> PyResult<()> {
+fn pygis_o3(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(haversine))?;
 
     Ok(())
