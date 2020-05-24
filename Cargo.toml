@@ -5,7 +5,7 @@ authors = ["cvonsteg <cvonstegmann@gmail.com>"]
 edition = "2018"
 
 [lib]
-name = "haversine"
+name = "gis"
 crate-type = ["cdylib"]
 
 [dependencies.pyo3]

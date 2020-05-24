@@ -3,8 +3,8 @@ use pyo3::wrap_pyfunction;
 use std::f64;
 
 #[pyfunction]
-// Calculate haversine distance between to sets of lat/lon coords
-fn calc_haversine(lat_from: f64, lon_from: f64, lat_to: f64, lon_to: f64) -> PyResult<f64> {
+/// Calculate haversine distance between to sets of lat/lon coords
+fn haversine(lat_from: f64, lon_from: f64, lat_to: f64, lon_to: f64) -> PyResult<f64> {
     const R:f64 = 6371f64;
 
     // convert latitudes to radians
@@ -22,8 +22,8 @@ fn calc_haversine(lat_from: f64, lon_from: f64, lat_to: f64, lon_to: f64) -> PyR
 
 
 #[pymodule]
-fn haversine(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_wrapped(wrap_pyfunction!(calc_haversine))?;
+fn gis(_py: Python, m: &PyModule) -> PyResult<()> {
+    m.add_wrapped(wrap_pyfunction!(haversine))?;
 
     Ok(())
 }

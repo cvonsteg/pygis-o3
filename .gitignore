@@ -1,5 +1,13 @@
-/target
-**/*.rs.bk
-
-.vscode/
+target/
+venv*/
+.venv/
+.pytest_cache/
+.tox/
+*.so
 __pycache__/
+*.egg-info/
+*.egg
+dist/
+*.whl
+build
+dist
