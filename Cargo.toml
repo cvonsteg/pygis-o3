@@ -1,0 +1,13 @@
+[package]
+name = "haversine"
+version = "0.1.0"
+authors = ["cvonsteg <cvonstegmann@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "haversine"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.10.0"
+features = ["extension-module"]
